@@ -20,29 +20,29 @@
   </head>
   <body>
     <!-------------------Шапка сайта-------------------->
-    <header class="head">
-      <div class="container">
-        <nav class="head-nav">
-          <a class="logo" href="./index.html" lang="en"
-            ><span class="logo-accent">Web</span>Studio
-          </a>
-          <ul class="list">
-            <li><a class="head-link link" href="./index.html">Студия</a></li>
-            <li><a class="head-link link current" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="head-link link" href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="list">
-          <li>
-            <a class="head-link contacts link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+    <header class="head container">
+      <nav class="head-nav">
+        <a class="logo" href="./index.html" lang="en"
+          ><span class="logo-accent">Web</span>Studio
+        </a>
+        <ul class="head-pagination list">
+          <li class="pagination-item">
+            <a class="head-link link" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a class="head-link contacts link" href="tel:+380961111111">+38 096 111 11 11 </a>
+          <li class="pagination-item">
+            <a class="head-link link current" href="./portfolio.html">Портфолио</a>
           </li>
+          <li class="pagination-item"><a class="head-link link" href="">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
+      <ul class="head-feedback list">
+        <li class="phone-mail">
+          <a class="head-link contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="phone-mail">
+          <a class="head-link contacts link" href="tel:+380961111111">+38 096 111 11 11 </a>
+        </li>
+      </ul>
     </header>
     <!------------------Галерея работ----------------------->
     <main>
@@ -51,7 +51,7 @@
         <div class="container">
           <h2 class="visually-hidden">Фильтр</h2>
           <ul class="galery-list list">
-            <li><button class="filter" type="button">Все</button></li>
+            <li><button class="filter active" type="button">Все</button></li>
             <li><button class="filter" type="button">Веб-сайты</button></li>
             <li><button class="filter" type="button">Приложения</button></li>
             <li><button class="filter" type="button">Дизайн</button></li>
@@ -176,8 +176,8 @@
           ><span class="logo-accent">Web</span>Studio</a
         >
         <address class="address">
-          <ul class="phone-mail list">
-            <li>
+          <ul class="address-list list">
+            <li class="address-item">
               <a
                 class="footer-address link"
                 href="https://goo.gl/maps/XXydakqSkCd74Hgu6"
@@ -187,12 +187,12 @@
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
-            <li>
+            <li class="address-item">
               <a class="footer-address more link" href="mailto:info@example.com"
                 >info@example.com
               </a>
             </li>
-            <li>
+            <li class="address-item">
               <a class="footer-address more link" href="tel:+380991111111">+38 099 111 11 11 </a>
             </li>
           </ul>
