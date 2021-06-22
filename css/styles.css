@@ -28,7 +28,7 @@ body {
 .list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 .link {
   text-decoration: none;
@@ -43,6 +43,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -349,17 +350,21 @@ img {
 .galery-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--features-item-gap));
-  margin-bottom: calc(-1 * var(--features-item-gap));
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .projects-card {
-  flex-basis: calc(100% / 3 - var(--features-item-gap));
-  margin-right: var(--features-item-gap);
-  margin-bottom: var(--features-item-gap);
-  padding-bottom: 20px;
-  text-align: center;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
   border-bottom: 1px solid #eeeeee;
+}
+.projects-about {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .projects-link {
@@ -367,17 +372,12 @@ img {
   color: inherit;
 }
 
-.projects-link img {
-  margin-bottom: 20px;
-}
-
 .projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .projects-desc {
@@ -386,6 +386,5 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--shadow-color);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
